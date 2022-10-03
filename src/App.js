@@ -23,7 +23,7 @@ function App() {
   }
 
   return (
-    <div className={(typeof data.location != "undefined")? ((data.current.is_day == 1) ? 'app change' : 'app') : 'app'}>
+    <div className={(typeof data.location != "undefined")? ((data.current.is_day === 1) ? 'app change' : 'app') : 'app'}>
       <div className="search">
       <input
         onChange={e => setLocation(e.target.value)}
